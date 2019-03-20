@@ -1,0 +1,25 @@
+<!--
+  Generated template for the MapsfindPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="redhard" class="peachbg">
+    <ion-title>{{ rsData.end.nama | uppercase }}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="runNavigator('lat', 'lang')">
+        <ion-icon name="navigate"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div id="map">
+
+  </div>
+</ion-content>

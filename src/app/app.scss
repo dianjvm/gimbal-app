@@ -14,3 +14,18 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.peachbg, ion-navbar.peachbg div.toolbar-background {
+
+  color: color($colors, putihku);
+  background-image: -webkit-linear-gradient(180deg, color($colors, redhard),color($colors, redshoft))!important;
+  background-image: -o-linear-gradient(180deg,color($colors, redhard),color($colors, redshoft))!important;
+  background-image: linear-gradient(180deg,color($colors, redhard),color($colors, redshoft))!important;
+
+}
+
+ion-navbar.peachbg .toolbar-content .toolbar-title {
+
+  color: color($colors, putihku);
+
+}

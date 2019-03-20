@@ -1,0 +1,83 @@
+[
+    {
+      "nama" : "Tambal Ban Pak Salamun",
+      "alamat" : "Matahari Mall, Kebondalem, Purwokerto Lor, East Purwokerto, Banyumas Regency, Central Java 53114",
+      "img": "assets/imgs/default_logo.jpg",
+      "lat" : -7.424872,
+      "lng" : 109.242800,
+      "jarak" : null,
+      "txtjarak" : "0 Km"
+    },
+    {
+      "nama" : "Tambal Ban Ovis Nitrogen",
+      "alamat" : "Jl. Overstee Isdiman No.11, Cigrobak, Purwokerto Lor, East Purwokerto, Banyumas Regency, Central Java 53121",
+      "img": "assets/imgs/default_logo.jpg",
+      "lat" : -7.421739,
+      "lng" : 109.244264,
+      "jarak" : null,
+      "txtjarak" : "0 Km"
+    },
+    {
+      "nama" : "Sejati Bengkel",
+      "alamat" : "Jl. Brigjend. Encung, Karangjambu, Purwanegara, Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127",
+      "img": "assets/imgs/default_logo.jpg",
+      "lat" : -7.407631,
+      "lng" : 109.233353,
+      "jarak" : null,
+      "txtjarak" : "0 Km"
+    },
+    {
+      "nama" : "Tambal Ban Zen",
+      "alamat" : "Jl. Bobosan, Karangjambu, Purwanegara, Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127",
+      "img": "assets/imgs/default_logo.jpg",
+      "lat" : -7.407638,
+      "lng" : 109.230822,
+      "jarak" : null,
+      "txtjarak" : "0 Km"
+    },
+    {
+      "nama" : "Tambal Ban Karangwangkal",
+      "alamat" : "Karangwangkal, Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53123",
+      "img": "assets/imgs/default_logo.jpg",
+      "lat" : -7.404471,
+      "lng" : 109.2516983,
+      "jarak" : null,
+      "txtjarak" : "0 Km"
+    },
+    {
+      "nama" : "Tambal Ban Karanganjing",
+      "alamat" : "Karanganjing, Purwanegara, Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53127",
+      "img": "assets/imgs/default_logo.jpg",
+      "lat" : -7.408044,
+      "lng" : 109.2336603,
+      "jarak" : null,
+      "txtjarak" : ""
+    },
+    {
+      "nama" : "RS Hidayah",
+      "alamat" : "Gang Cempaka 18 No.47, Purwokerto Wetan, Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53111",
+      "img": "assets/imgs/default_logo.jpg",
+      "lat" : -7.426600,
+      "lng" : 109.258185,
+      "jarak" : null,
+      "txtjarak" : "0 Km"
+    },
+    {
+      "nama" : "Tambal Ban Purwosari",
+      "alamat" : "Alamat belum terdaftar",
+      "img": "assets/imgs/default_logo.jpg",
+      "lat" : -7.395511,
+      "lng" : 109.2296583,
+      "jarak" : null,
+      "txtjarak" : "0 Km"
+    },
+    {
+      "nama" : "Tambal Ban Sampurna",
+      "alamat" : "Alamat belum terdaftar",
+      "img": "assets/imgs/default_logo.jpg",
+      "lat" : -7.4072997,
+      "lng" : 109.224594,
+      "jarak" : null,
+      "txtjarak" : "0 Km"
+    }
+  ]

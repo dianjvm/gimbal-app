@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
-  <title>Ionic App</title>
+  <title>Find Hospital : Purwokerto</title>
   <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
@@ -15,19 +15,26 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-mapevents.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-ui.js" type="text/javascript" charset="utf-8"></script>
+  <!-- <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-clustering.js" charset="utf-8"></script> -->
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjA5g7oJ6u1aiPuodkX9ZnPJu2n-9XoQU"></script> -->
   <!-- cordova.js required for cordova apps (remove if not needed) -->
   <script src="cordova.js"></script>
 
-  <!-- un-comment this code to enable service worker
-  <script>
+  <!-- un-comment this code to enable service worker -->
+  <!-- <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js')
         .then(() => console.log('service worker installed'))
         .catch(err => console.error('Error', err));
     }
-  </script>-->
+  </script> -->
 
   <link href="build/main.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="http://js.api.here.com/v3/3.0/mapsjs-ui.css" />
 
 </head>
 <body>

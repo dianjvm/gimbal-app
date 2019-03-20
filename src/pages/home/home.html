@@ -1,14 +1,92 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+<ion-header no-border>
+  <ion-navbar color="redhard">
+    <ion-searchbar placeholder="Tukang Tambal" (ionInput)="searchRS($event)"></ion-searchbar>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <!-- Real floating action button, fixed. It will not scroll with the content -->
+  <!-- <ion-fab right bottom>
+    <button ion-fab class="peachbg" color="mainred" (click)="goToMaps(myLocation, terdekat)"><ion-icon name="navigate"></ion-icon></button>
+  </ion-fab>
+
+  <ion-list>
+    <button ion-item *ngFor="let item of dataRs" (click)="goToMaps(myLocation, item)">
+      <h3>{{ item.nama | uppercase }}</h3>
+      <p>{{ item.alamat }}</p>
+      <p>Jarak {{ item.txtjarak }}</p>
+    </button>
+  </ion-list> -->
+  <div id="search_section" [style.display]="(searching) ? 'block' : 'none'">
+    <ion-list>
+    <button ion-item *ngFor="let item of dataSearch" (click)="goToMaps(myLocation, item)">
+      <ion-avatar item-start>
+        <img [src]="item.img">
+      </ion-avatar>
+      <h3>{{ item.nama | uppercase }}</h3>
+      <p>{{ item.alamat }}</p>
+      <p>Jarak {{ item.txtjarak }}</p>
+    </button>
+  </ion-list>
+  </div>
+
+  <div id="home_section" [style.display]="(searching === false) ? 'block' : 'none'">
+    <div id="card_section" padding class="peachbg" *ngIf="terdekat">
+      <ion-card id="card-short" no-margin>
+
+        <ion-card-header color="redhard">
+          Tambal Ban Terdekat<span float-right ion-text color="gray">({{ terdekat.txtjarak }})</span>
+          <hr>
+        </ion-card-header>
+
+        <ion-card-content>
+          <!-- Add card content here! -->
+          <ion-list no-padding>
+            <button ion-item icon-left type="button">
+              <ion-avatar item-start>
+                <ion-img [src]="terdekat.img"></ion-img>
+              </ion-avatar>
+                <h3>{{ terdekat.nama | titlecase }}</h3>
+                <p>{{ terdekat.alamat }}</p>
+              <button ion-button color="redhard" clear icon-left item-end (click)="goToMaps(myLocation, terdekat)">
+                <ion-icon name="navigate"></ion-icon>Track</button>
+            </button>
+          </ion-list>
+        </ion-card-content>
+
+      </ion-card>
+    </div>
+    <div id="mapshome"></div>
+  </div>
+
+  <div id="select_rs_home" padding *ngIf="selected">
+    <ion-card no-margin>
+
+      <ion-card-content>
+        <!-- Add card content here! -->
+        <ion-list no-padding>
+          <button ion-item icon-left type="button">
+            <ion-avatar item-start>
+              <img [src]="selected.img">
+            </ion-avatar>
+              <h3>{{ selected.nama | titlecase }}</h3>
+              <p>{{ selected.alamat }}</p>
+            <button ion-button color="redhard" clear icon-left item-end (click)="goToMaps(myLocation, selected)">
+              <ion-icon name="navigate"></ion-icon>Track</button>
+          </button>
+        </ion-list>
+      </ion-card-content>
+      <ion-buttons>
+        <button ion-button clear full icon-left color="redhard" class="peachbg" (click)="closeSelected()">
+          Tutup
+        </button>
+      </ion-buttons>
+    </ion-card>
+  </div>
+
+  <ion-fab center bottom *ngIf="!selected">
+    <button ion-fab class="peachbg" color="mainred" (click)="getMyLocation()">
+      <ion-icon name="locate"></ion-icon>
+    </button>
+  </ion-fab>
 </ion-content>

@@ -87,6 +87,10 @@
     <plugin name="cordova-plugin-geolocation" spec="4.0.1">
         <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="Mencari Lokasmu" />
     </plugin>
-    <plugin name="cordova-sqlite-storage" spec="3.2.0" />
     <engine name="android" spec="7.1.4" />
+    <plugin name="cordova-sqlite-storage" spec="^3.2.0" />
+    <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" spec="5.0.4">
+        <variable name="GOOGLE_API_KEY_FOR_ANDROID" value="{your_api_key}" />
+        <variable name="OKHTTP_VERSION" value="3.12.0" />
+    </plugin>
 </widget>
