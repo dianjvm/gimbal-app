@@ -33,3 +33,19 @@ wait installations and see not have error message after install.
 ```
 ionic serve
 ```
+## Build
+### Android
+You need android studio install, and SDK Path is set to environment variable.
+gradle install and set to environment.
+
+then following this code:
+```
+ionic cordova platform add android
+ionic cordova prepare android
+```
+
+After finish let build your first gimbal apk.
+```
+ionic cordova build android --prod
+```
+cek your folder platform/android/app/build/outputs/apk/debug/app-debug.apk
