@@ -27,7 +27,7 @@ git clone https://github.com/dianjvm/gimbal-app.git gimbal
 cd gimbal
 npm install
 ```
-wait installations and see not have error message after isntall.
+wait installations and see not have error message after install.
 
 ### 4. You Go
 ```
